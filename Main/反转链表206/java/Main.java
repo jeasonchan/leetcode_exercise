@@ -1,4 +1,3 @@
-
 /*
 
 反转一个单链表。
@@ -62,16 +61,20 @@ class Solution {
 
     //借助一个临时变量
     public ListNode reverseList2(ListNode head) {
-//        while (){
-//
-//        }
-//
-//        ListNode next = head.next;
-//        ListNode originNode = next.next;
-//        next.next = head;
+        ListNode left = head;
+        ListNode temp = null;
+        ListNode result = null;
 
 
+        while (left != null) {
+            temp = left.next;
+            left.next = result;
+            result = left;
+            left = temp;
 
+        }
+
+        return result;
 
     }
 
