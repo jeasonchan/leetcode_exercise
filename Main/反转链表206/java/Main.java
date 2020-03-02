@@ -1,3 +1,5 @@
+package com.zte.反转链表206;
+
 /*
 
 反转一个单链表。
@@ -59,7 +61,8 @@ class Solution {
     }
 
 
-    //借助一个临时变量
+    //单次遍历借助一个临时变量
+    //解题思路，还是自己先要用手模拟一遍算法实现，再将手写实现转换为代码实现
     public ListNode reverseList2(ListNode head) {
         ListNode left = head;
         ListNode temp = null;
